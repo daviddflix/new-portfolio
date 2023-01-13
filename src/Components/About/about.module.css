@@ -4,15 +4,15 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: #282828;
 }
 
 .submain{
     display: flex;
-    width: 100%;
+    width: 99%;
     flex-wrap: wrap;
-    align-items: flex-start;
+    align-items:flex-start;
     justify-content: center;
+    
 }
 
 
@@ -87,6 +87,7 @@
 
     .containerIcons{
         width: 100%;
+        margin: 0  0 1rem 0;
     }
 
     .containerPic{

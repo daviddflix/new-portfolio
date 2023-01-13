@@ -71,6 +71,7 @@ export default function Contact(){
      
     return(
         <div id='contact' className={s.main}>
+          <h1 className={s.mainTitle}>Contact Me</h1>
                 <form ref={form} onSubmit={handleSubmit} className={s.form}>
                     <div className={s.container}>
                         <h3 className={s.title}>Name</h3>
@@ -83,7 +84,6 @@ export default function Contact(){
                     {formErrors.message &&  <Alert className={s.error} severity="error">{formErrors.message}</Alert>}
                     </div>
                     <button type='submit' className={s.btn}>Send Message <AiOutlineSend className={s.sendIcon}/></button>
-                    {/* <Button className={s.btn} type='submit' variant='contained' >   <AiOutlineSend className={s.sendIcon}/></Button> */}
             </form>
         </div>
     )
