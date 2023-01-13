@@ -1,6 +1,6 @@
 import s from './about.module.css'
 import img from '../../assets/profilePic.png'
-import logo from '../../assets/Mylogo.png'
+
 
 
 
