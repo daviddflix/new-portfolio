@@ -24,7 +24,7 @@ export default  function Home(){
                   <span className={s.role}>Full Stack Developer</span>
             </div>
            {/* <div className={s.containerModel}> */}
-          <Avatar/> 
+         
           {/* </div>  */}
             <div className={s.containerFollow}>
                 <h3 className={s.follow}>Follow Me</h3>
