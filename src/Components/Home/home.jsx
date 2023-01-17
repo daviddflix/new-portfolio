@@ -1,11 +1,9 @@
 import s from './home.module.css'
 import {BsInstagram} from 'react-icons/bs'
-import React from 'react';
-import { Suspense } from 'react';
+import React, { Suspense, useState } from 'react';
+import useWindowDimensions, {Model} from '../../../Model'
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
-import Model from '../../../Model'; /* highlight-line */
-
 
 export default  function Home(){
 
@@ -24,7 +22,7 @@ export default  function Home(){
                   <span className={s.role}>Full Stack Developer</span>
             </div>
            {/* <div className={s.containerModel}> */}
-         
+         <Avatar/>
           {/* </div>  */}
             <div className={s.containerFollow}>
                 <h3 className={s.follow}>Follow Me</h3>
@@ -37,29 +35,45 @@ export default  function Home(){
     )
 }
 
+const query = {
+  backgroundColor: '#282828',
+  width: '15vw',
+  height: '60vh',
+  position: 'absolute',
+  top: '3.6rem',
+  right: '14rem',
+  zIndex: '-1',
+ 
+}
+
+const query1 = {
+  backgroundColor: '#282828',
+  width: '30vw',
+  height: '20vh',
+  position: 'absolute',
+  top: '3.5rem',
+  right: '2rem',
+  zIndex: '-1',
+ 
+}
 
 
-function Avatar() {
-   return (
-      <Canvas
-         camera={{ position: [2, 0, 12.25], fov: 10 }}
-         style={{
-            position: 'absolute',
-            top: '3rem',
-            right: '0',
-            width: '50vw',
-            height: '50vh',
-            // border: '1px solid #fff'
-          
-         }}
-      >
-         <ambientLight intensity={1.25} />
-         <ambientLight intensity={0.1} />
-         <directionalLight intensity={0.4} />
-         <Suspense fallback={null}>
-            <Model position={[0.025, -0.9, 0]} /> /* highlight-line */
-         </Suspense>
-         {/* <OrbitControls /> */}
-      </Canvas>
-   );
+ function Avatar() {
+
+  const { height, width } = useWindowDimensions()
+
+  return (
+     <Canvas
+        camera={{ position: [2, 0, 12.25], fov: 15 }}
+        style={width > 800? query : query1}
+     >
+        <ambientLight intensity={1.25} />
+        <ambientLight intensity={0.1} />
+        <directionalLight intensity={0.4} />
+        <Suspense fallback={null}>
+        <Model position={[0.025, -0.9, 0]} /> 
+        </Suspense>
+        {/* <OrbitControls /> */}
+     </Canvas>
+  );
 }

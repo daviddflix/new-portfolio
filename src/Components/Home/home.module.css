@@ -2,7 +2,7 @@
     width: 100%;
     display: flex;
     padding: 0 0 2rem 0;
-    z-index: 1000;
+    z-index: 99;
     position: relative;
 }
 
@@ -10,7 +10,7 @@
     width: 80%;
     display: flex;
     flex-direction: column;
-   
+   /* border: #00adb5 solid 1px; */
 }
 
 .profile{
@@ -52,6 +52,7 @@
     color: #fff;
     margin: 0 0 0 4rem;
     height: 50px;
+    
 }
 
 .containerModel{
@@ -95,6 +96,11 @@ height: 80%;
     
 }
 
+.model{
+    background-color: #282828;
+
+}
+
 @media screen and (max-width: 1000px) {
     .containerModel{
         position: absolute;
@@ -107,6 +113,10 @@ height: 80%;
     .title{
         font-size: 100px;
     }
+    
+    .containerName{
+       height: 10px;
+    }
 
     .containerModel{
         right: 10%;
@@ -115,6 +125,7 @@ height: 80%;
 
     .subtitle{
         font-size: 30px;
+        margin-top: 2.5rem;
     }
 
     .name{
