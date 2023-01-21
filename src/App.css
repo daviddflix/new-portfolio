@@ -1,7 +1,13 @@
 body{
   margin: 0;
-  padding: 0;
+  padding: 0; 
+}
+
+.App-Dark{
   background-color: #282828;
+}
+.App-Light{
+  background-color: #fff;
 }
 
 *{

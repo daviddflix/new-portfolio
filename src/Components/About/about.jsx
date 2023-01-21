@@ -1,21 +1,25 @@
 import s from './about.module.css'
 import img from '../../assets/profilePic.png'
-
+import { useEffect } from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 
 
 export default function About(){
 
+  useEffect(() => {
+    AOS.init({duration: 2000})
+})
 
     return(
      
         <div id='about' className={s.main}>
-          {/* <Mark section={'About Me'}/> */}
             <div className={s.containerPic}>
                 <img src={img} className={s.profile} alt='Profile'/>
             <h3 className={s.p}>I'm a Full-stack developer with a great learning capacity, adaptability to new technologies, and a very passionate person.</h3>
             </div>
-            <div className={s.submain}>
+            <div  data-aos="zoom-in"className={s.submain}>
                 <div className={s.containerIcons}>
                    <h4 className={s.title}>Basic</h4>
                    {

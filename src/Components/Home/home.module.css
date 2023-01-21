@@ -41,8 +41,9 @@
 
 .subtitle{
     color: #fff;
-    font-size: 60px;
+    font-size: 50px;
     margin: 0 0 0 4rem;
+  
 }
 
 .containerName{
@@ -68,9 +69,10 @@ height: 80%;
 }
 
 .name{
-    margin: 0 .5rem 0 0;
+    margin: 0 ;
     font-size: 50px;
-    border-radius: 4px;
+  
+    border-bottom: #00adb5 solid 2px;
 }
 
 .spanline{
@@ -86,7 +88,8 @@ height: 80%;
 .lastname{
     color: #00adb5;
     font-size: 50px;
-    
+    margin: 0;
+    border-bottom: #00adb5 solid 2px;
 }
 
 .role{
@@ -137,7 +140,7 @@ height: 80%;
     }
 
     .role{
-        margin: 0rem 0 0 4rem;
+        margin: 0.8em 0 0 4rem;
        
     }
 

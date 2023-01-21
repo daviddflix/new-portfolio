@@ -1,0 +1,44 @@
+.moon{
+    color: #303030 ;
+    width: 20px;
+    height: 20px;
+ 
+}
+.sun{
+    color: #FDB813  ;
+    width: 20px;
+    height: 20px;
+   
+}
+
+
+.btnDarkModeDark{
+    background-color: #282828;
+    border: 1px solid #202020;
+    border-radius: 10px;
+     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 10px;
+    color: #282828;
+}
+.btnDarkModeLight{
+    background-color: #fff;
+    border: 1px solid #202020;
+    border-radius: 10px;
+     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 10px;
+    color: #282828;
+}
+
+.dark {
+   background-color: #fff;
+ 
+    }
+
+@media screen and (max-width: 800px) {
+    .btnDarkModeLight{
+        display: none;
+    }
+    .btnDarkModeDark{
+        display: none;
+    }
+}

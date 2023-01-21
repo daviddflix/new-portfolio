@@ -12,7 +12,7 @@ import { useState } from 'react'
 const Nav = () => {
  
   const [open, setOpen] = useState(false)
-
+  
 
   const contact = () => {
     window.location.replace("/#contact");

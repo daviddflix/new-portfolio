@@ -3,14 +3,20 @@ import deviaje from '../../assets/deviaje.png'
 import country from '../../assets/country.png'
 import altonono from '../../assets/altonono.png'
 import s from './projects.module.css'
-
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import { useEffect } from 'react';
 
 export default function Projects(){
+
+    useEffect(() => {
+        AOS.init({duration: 2000})
+    })
 
     return(
         <div id='portfolio' className={s.main}>
             <h1 className={s.mainTitle}>Projects</h1>
-            <div className={s.container}>
+            <div data-aos='fade-up' className={s.container}>
                 {
                     data && data.map(p => {
                         return(
