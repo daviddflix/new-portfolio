@@ -8,6 +8,7 @@ import cv from '../../assets/cv.pdf'
 import {BsDownload} from 'react-icons/bs'
 import {FaBars} from 'react-icons/fa'
 import { useState } from 'react'
+import BtnDarkMode from '../helper/BtnDarkMode/btnDarkMode'
 
 const Nav = () => {
  
@@ -53,7 +54,7 @@ const Nav = () => {
               <h3 className={s.link}>Contact</h3>
           </div>
          
-        
+        <BtnDarkMode/>
        
         </div>
         <a href={cv} download={cv} className={s.containerDownload}>

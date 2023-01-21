@@ -5,7 +5,7 @@ import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
 
 const query = {
-    backgroundColor: '#282828',
+   
     width: '15vw',
     height: '50vh',
     position: 'absolute',
@@ -16,7 +16,7 @@ const query = {
   }
   
   const query1 = {
-    backgroundColor: '#282828',
+   
     width: '30vw',
     height: '30vh',
     position: 'absolute',

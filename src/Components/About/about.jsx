@@ -17,7 +17,11 @@ export default function About(){
         <div id='about' className={s.main}>
             <div className={s.containerPic}>
                 <img src={img} className={s.profile} alt='Profile'/>
-            <h3 className={s.p}>I'm a Full-stack developer with a great learning capacity, adaptability to new technologies, and a very passionate person.</h3>
+            <h3 className={s.p}>I consider to be a very talented and passionate programmer always trying to 
+            apply the best software development principles, staying up to date with industry 
+            trends and consistently delivering high-quality work. 
+            I enjoy working in a team and have a passion for creating efficient and user-friendly 
+            software.</h3>
             </div>
             <div  data-aos="zoom-in"className={s.submain}>
                 <div className={s.containerIcons}>
