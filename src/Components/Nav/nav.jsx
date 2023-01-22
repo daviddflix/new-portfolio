@@ -18,25 +18,43 @@ const Nav = () => {
   const contact = () => {
     window.location.replace("/#contact");
     setOpen(false)
+    document.body.style.overflow = "visible"
   }
   const home = () => {
     window.location.replace("/#home");
     setOpen(false)
+    document.body.style.overflow = "visible"
   }
   const portfolio = () => {
     window.location.replace("/#portfolio");
     setOpen(false)
+    document.body.style.overflow = "visible"
   }
   const about = () => {
     window.location.replace("/#about");
     setOpen(false)
+    document.body.style.overflow = "visible"
   }
 
+  const menuBars = () => {
+
+    if(open === false){
+      document.body.style.overflow = "hidden"
+      setOpen(true)
+    } else {
+      document.body.style.overflow = "visible"
+      setOpen(false)
+    }
+
+  }
+
+  console.log(open)
+
   return (
-   <div className={s.main}>
-    <FaBars onClick={() => setOpen(!open)} className={s.bars}/>
+   <div id='containerLinks' className={s.main}>
+    <FaBars onClick={menuBars} className={s.bars}/>
       <img src={logo} className={s.logo} alt='Logo'/>
-        <div style={open === false ?{left: '-100%'}: {left: 0}} className={s.containerLinks}>
+        <div  style={open === false ?{left: '-100%'}: {left: 0}} className={s.containerLinks}>
           <div onClick={home} className={s.subContainerLink}>
               <AiOutlineHome className={s.linkIcon}/>
               <h3 className={s.link}>Home</h3>

@@ -4,13 +4,18 @@
     padding: 0 0 2rem 0;
     z-index: 99;
     position: relative;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    height: 80vh;
+    /* background-image: url('../../assets/background.jpg');
+    background-repeat: no-repeat;
+  background-size: 100% 100vh; */
 }
 
 .subMain{
     width: 80%;
     display: flex;
     flex-direction: column;
-   /* border: #00adb5 solid 1px; */
+  
 }
 
 .profile{
@@ -102,6 +107,10 @@ height: 80%;
         position: absolute;
         bottom: 5rem;
         right: 15%;
+        }
+
+        .main{
+            height: auto;
         }
     }        
 
