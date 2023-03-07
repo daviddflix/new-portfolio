@@ -65,6 +65,8 @@ const advanced = [
   { skill: "Express", porcentaje: "70%" },
 ];
 const intermidiate = [
+  { skill: "Python", porcentaje: "30%" },
+  { skill: "Django", porcentaje: "29%" },
   { skill: "React Native", porcentaje: "30%" },
   { skill: "Git", porcentaje: "40%" },
   { skill: "Github", porcentaje: "40%" },
