@@ -72,7 +72,7 @@ const Nav = () => {
               <h3 className={s.link}>Contact</h3>
           </div>
          
-        <BtnDarkMode/>
+        {/* <BtnDarkMode/> */}
        
         </div>
         <a href={cv} download={cv} className={s.containerDownload}>
