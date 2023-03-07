@@ -3,6 +3,7 @@
 .main{
     height: 150px;
     width: 100%;
+   
 }
 
 .icon{
@@ -10,7 +11,7 @@
     height: 50px;
     color: #007bb6;
     margin: 1rem 1rem 1rem  0 ;
-    
+   
 }
 
 .icon:hover{
@@ -28,18 +29,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
+    margin: 0;
+    position: relative;
+    bottom: -5px;
 }
 
 .name{
     height: 100%;
     margin: .4rem 0 0 .5rem;
-    color: #00adb5 ;
+    
     font-family: 'Sacramento', cursive;
     z-index: 10;
 }
 
-.done{
+.doneBy{
     font-family: 'Roboto', sans-serif;
     z-index: 10;
 }

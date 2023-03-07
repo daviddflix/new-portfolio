@@ -5,7 +5,7 @@ import {BsFillMoonFill} from 'react-icons/bs'
 import { ThemeContext } from '../../../App';
 import s from '../BtnDarkMode/DarkMode.module.css'
 
-export default function Header() {
+export default function BtnDarkMode() {
 
   const {theme, Toggle} = useContext(ThemeContext)
 

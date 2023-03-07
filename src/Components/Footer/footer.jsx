@@ -23,7 +23,7 @@ export default function Footer(){
                 </a>
             </div>
             <div className={s.containerFirm}>
-                <h3 className={s.done}>Done by</h3>
+                <h3 className={s.doneBy}>Done by</h3>
                 <h3 className={s.name}>David</h3>
             </div>
         </div>
