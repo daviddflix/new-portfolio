@@ -38,7 +38,7 @@ export default function About() {
       <div data-aos="zoom-in" className={s.submain}>
         {skills.map(({ skill, alt }) => {
           return (
-            <div className={s.containerSkills}>
+            <div key={alt} className={s.containerSkills}>
               <img src={skill} alt={alt} />
               <span>{alt}</span>
             </div>

@@ -1,53 +1,21 @@
-.main{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-}
-
-.submain{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 4rem 0 2rem 0 ;
-}
-
-.containerLogos{
-    width: 30%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-  
-   
-}
-
 .mainTitle{
     font-size: 2rem;
     width: 90%;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    margin: 0;
-   
+    margin: 0 0 3rem 0;
     border-bottom:  1px solid;
 }
 
 .form{
-    width: 70%;
+    width: 100%;
     display: flex;
-    height: 500px;
     justify-content: center; 
     flex-direction: column;
     align-items: center;
 }
 
-@media screen and (max-width: 800px) {
-    .form{
-        width: 90%;
-    }
-}
 
 .container{
     width: 70%;
@@ -58,7 +26,6 @@
 
 .title{
     margin: 0 0 1rem 0;
-  
     font-size: 1.5rem;
     width: 90%;
 }
@@ -78,18 +45,19 @@
 }
 
 .btn{
-    width: 70%;
+    width: 40%;
     height: 50px;
     outline: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 2rem 0 0 0;
+    margin: 2rem 0 3rem 0;
     font-size: 15px;
     background-color: #009ee3;
     border: none;
     color: #Fff;
     border-radius: 5px;
+    font-weight: 800;
 }
 
 .error{
@@ -126,30 +94,7 @@
     }
 }
 
-.email{
-    width: 50px;
-    height: 50px; 
-    color: #009ee3;
-    margin: 0 0 0 2rem;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-}
 
-.titleEmail{
-    color: #Fff;
-    margin: 0;
-}
-
-.github{
-    width: 50px;
-    height: 50px; 
-    margin: 0 0 2rem 2rem;
-}
-
-.sendIcon{
-    width: 20px;
-    height: 20px;
-    margin: 0 0 0 1rem;
-}
 @media screen and (max-width: 800px) {
 
     .container{
