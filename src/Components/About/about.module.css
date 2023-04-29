@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-}
+} 
 
 .submain{
     display: flex;
@@ -13,49 +13,6 @@
     align-items:flex-start;
     justify-content: center;
     
-}
-
-
-
-.containerIcons{
-    /* border: solid 2px #00adb5; */
-    width: 30%;
-    border-radius: 5px;
-    margin: 0  1rem 1rem 0;
-    position: relative;
-    flex-direction: column;
-    background-color: #202020;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-
-}
-
-.subContainerIcons{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
-
-
-.about{
-    height: 1px;
-    width: 100%;
-   
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 25px;
-    margin: 0 auto;
-    background: -webkit-gradient(radial, 50% 20%, 20, 45% 45%, 800, from(#282828), to(#fff));
-   
-}
-
-.title{
-    color: #fff;
-   
-    font-size: 1.1rem;
 }
 
 .containerPic{
@@ -78,6 +35,28 @@
     margin:  0 1rem 0 1rem;
 }
 
+.mainTitle{
+    font-size: 2rem;
+    width: 90%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 0 0 3rem 0;
+    border-bottom: 1px solid;  
+}
+
+.containerSkills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2em;
+}
+
+.containerSkills:hover{
+    transform: scale(1.2);
+}
+
+
 @media screen and (max-width: 800px) {
     .profile{
         width: 100px;
@@ -85,10 +64,6 @@
         margin: 0 1rem 0 1rem;
     }
 
-    .containerIcons{
-        width: 100%;
-        margin: 0  0 1rem 0;
-    }
 
     .containerPic{
         display: flex;
@@ -102,64 +77,3 @@
     }
 }
 
-
-
-.mainSkills{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    margin:  1rem 0 1rem 0;
-    width: 100%;
-   
-}
-
-.subMainSkills{
-    width: 20%;
-    font-size: 15px;
-}
-
-
-
-.progress {
-    height: 20px;
-    width: 50%;
-    display: flex;
-    align-items: center;
-    margin: 0 0 0 1rem;
-    border-radius: 100px;
-    background-color: #e6f3fa
-  
-}
- 
-.progressBar {
-    height: 70%;
-    background: #428bca;
-    display: flex;
-    align-items: center;
-    transition: width 0.25s;
-    border-radius: 100px;
-    margin: 0 0 0 3px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    animation: bounce; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 2s; /* don't forget to set a duration! */
-}
-
-@keyframes bounce {
-    10%{
-       width: 0
-    }
-    50%{
-        width: 50%
-    }
-    80%{
-        width: 70%
-    }
-}
- 
-.progressBarText {
-    margin-left: 10px;
-    font-weight: bold;
-    color: #cce7f5;
-    font-size: 1px;
-}

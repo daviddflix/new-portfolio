@@ -3,6 +3,18 @@ import img from "../../assets/profilePic.png";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import reactIcon from "../../assets/react.png";
+import aws from "../../assets/aws.png";
+import css from "../../assets/css.png";
+import django from "../../assets/django.png";
+import docker from "../../assets/docker.png";
+import git from "../../assets/git.png";
+import html from "../../assets/html.png";
+import node from "../../assets/node.png";
+import postgres from "../../assets/postgres.png";
+import py from "../../assets/py.png";
+import ts from "../../assets/ts.png";
+import github from "../../assets/gith.png";
 
 export default function About() {
   useEffect(() => {
@@ -14,77 +26,76 @@ export default function About() {
       <div className={s.containerPic}>
         <img src={img} className={s.profile} alt="Profile" />
         <h3 className={s.p}>
-          I'm a Full-stack with a
-          remarkable ability to learn and adapt to new technologies with ease.
-          My passion for software development drives me to continuously seek new
-          challenges and opportunities to grow my skill set. With a keen
-          attention to detail and a strong work ethic, I am committed to
-          delivering high-quality solutions that meet the needs of clients and
-          end-users alike..
+          I'm a Full-stack with a remarkable ability to learn and adapt to new
+          technologies with ease. My passion for software development drives me
+          to continuously seek new challenges and opportunities to grow my skill
+          set. With a keen attention to detail and a strong work ethic, I am
+          committed to delivering high-quality solutions that meet the needs of
+          clients and end-users alike.
         </h3>
       </div>
+      <h1 className={s.mainTitle}>Skills</h1>
       <div data-aos="zoom-in" className={s.submain}>
-        <div className={s.containerIcons}>
-          <h4 className={s.title}>Basic</h4>
-          {basic.map((p) => {
-            return (
-              <Skills key={p.skill} tech={p.skill} porcentaje={p.porcentaje} />
-            );
-          })}
-        </div>
-        <div className={s.containerIcons}>
-          <h4 className={s.title}>Intermidiate</h4>
-          {intermidiate.map((p) => {
-            return (
-              <Skills key={p.skill} tech={p.skill} porcentaje={p.porcentaje} />
-            );
-          })}
-        </div>
-        <div className={s.containerIcons}>
-          <h4 className={s.title}>Advanced</h4>
-          {advanced.map((p) => {
-            return (
-              <Skills key={p.skill} tech={p.skill} porcentaje={p.porcentaje} />
-            );
-          })}
-        </div>
+        {skills.map(({ skill, alt }) => {
+          return (
+            <div className={s.containerSkills}>
+              <img src={skill} alt={alt} />
+              <span>{alt}</span>
+            </div>
+          );
+        })}
       </div>
     </div>
   );
 }
 
-export function Mark({ section }) {
-  return <h4 className={`${s.about} ${s.mainTitle}`}>{section}</h4>;
-}
-
-const advanced = [
-  { skill: "CSS & HTML5", porcentaje: "45%" },
-  { skill: "React", porcentaje: "70%" },
-  { skill: "Node", porcentaje: "65%" },
-  { skill: "PostgreSQL", porcentaje: "60%" },
-  { skill: "Express", porcentaje: "70%" },
+const skills = [
+  {
+    skill: reactIcon,
+    alt: "React",
+  },
+  {
+    skill: node,
+    alt: "Node",
+  },
+  {
+    skill: postgres,
+    alt: "PostgreSQL",
+  },
+  {
+    skill: ts,
+    alt: "Typescript",
+  },
+  {
+    skill: py,
+    alt: "Python",
+  },
+  {
+    skill: django,
+    alt: "Django",
+  },
+  {
+    skill: docker,
+    alt: "Docker",
+  },
+  {
+    skill: aws,
+    alt: "AWS",
+  },
+  {
+    skill: html,
+    alt: "HTML5",
+  },
+  {
+    skill: css,
+    alt: "CSS",
+  },
+  {
+    skill: git,
+    alt: "Git",
+  },
+  {
+    skill: github,
+    alt: "Github",
+  },
 ];
-const intermidiate = [
-  { skill: "Python", porcentaje: "30%" },
-  { skill: "Django", porcentaje: "29%" },
-  { skill: "React Native", porcentaje: "30%" },
-  { skill: "Git", porcentaje: "40%" },
-  { skill: "Github", porcentaje: "40%" },
-];
-const basic = [
-  { skill: "GraphQL", porcentaje: "20%" },
-  { skill: "Electron", porcentaje: "25%" },
-];
-
-function Skills({ porcentaje, tech }) {
-  return (
-    <div className={s.mainSkills}>
-      <h3 className={s.subMainSkills}>{tech}</h3>
-      <div className={s.progress}>
-        <div className={s.progressBar} style={{ width: porcentaje }}>
-          <span className={s.progressBarText}></span>
-        </div>
-      </div>
-    </div>
-  );
-}
